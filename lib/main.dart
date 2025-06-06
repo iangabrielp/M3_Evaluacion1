@@ -44,16 +44,16 @@ class Cuerpo extends StatelessWidget {
           drawer: Drawer(
         child: ListView(children: [
           ListTile(
-            title: Text("Pantalla 1"),
+            title: Text("Ejercicio 1"),
             onTap: () => 
             Navigator.push(context, MaterialPageRoute(builder: (context)=>Pantalla1())),
           ),
           ListTile(
-            title: Text("Pantalla 2"),
+            title: Text("Ejercicio 2"),
             onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>Pantalla2())),
           ),
           ListTile(
-            title: Text("Pantalla 3"),
+            title: Text("Ejercicio 3"),
             onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>Pantalla3())),
           )
         ],),
@@ -65,7 +65,7 @@ class Cuerpo extends StatelessWidget {
 void mensajeCreditos(context){
 showDialog(context: context, builder: (context)=>
 AlertDialog(
-  title: Center(child: Text("Titulo: Ejercicios de Programacion")),
+  title: Center(child: Center(child: Text("Ejercicios de Programacion"))),
   content: Column(
     children: [
       Center(child: Text("Programador: Gabriel Proaño")),
