@@ -1,5 +1,3 @@
-
-
 import 'package:evaluacion_1/Screens/Pantalla1Screen.dart';
 import 'package:evaluacion_1/Screens/Pantalla2Screen.dart';
 import 'package:evaluacion_1/Screens/Pantalla3Screen.dart';
