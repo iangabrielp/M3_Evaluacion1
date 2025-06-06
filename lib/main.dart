@@ -14,6 +14,7 @@ class Ejercicios02App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Cuerpo(),
     );
   }
@@ -25,12 +26,15 @@ class Cuerpo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("DRAWER"),),
+      appBar: AppBar(title: Text("DRAWER"),
+      actions: [IconButton(onPressed: ()=> mensajeCreditos(context), icon: Icon(Icons.text_snippet))],),
+      
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage( 
             fit: BoxFit.cover,
-            image: AssetImage("assets/images/fondo.jpg"))
+            image: AssetImage("assets/images/fondo.jpg")),
+            
         ),
 
 
@@ -56,4 +60,19 @@ class Cuerpo extends StatelessWidget {
       ),
     );
   }
+}
+
+void mensajeCreditos(context){
+showDialog(context: context, builder: (context)=>
+AlertDialog(
+  title: Text("Titulo: Ejercicios de Programacion"),
+  content: Column(
+    children: [
+      Text("Programador: Gabriel Proaño"),
+      Text("Carrera:Desarrollo de Software")
+    ],
+  ),
+  
+)
+);
 }
