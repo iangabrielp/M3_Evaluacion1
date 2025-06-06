@@ -26,7 +26,7 @@ class Cuerpo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("DRAWER"),
+      appBar: AppBar(title: Text("MOVILES III"),
       actions: [IconButton(onPressed: ()=> mensajeCreditos(context), icon: Icon(Icons.text_snippet))],),
       
       body: Container(
@@ -39,7 +39,7 @@ class Cuerpo extends StatelessWidget {
 
 
         child: Center(
-          child: Text("WELCOME - DRAWER",
+          child: Text("EVALUACION 1 - MOVILES III",
           style:TextStyle(color: Color.fromRGBO(245, 246, 248, 1)) ,))),
           drawer: Drawer(
         child: ListView(children: [
@@ -65,11 +65,11 @@ class Cuerpo extends StatelessWidget {
 void mensajeCreditos(context){
 showDialog(context: context, builder: (context)=>
 AlertDialog(
-  title: Text("Titulo: Ejercicios de Programacion"),
+  title: Center(child: Text("Titulo: Ejercicios de Programacion")),
   content: Column(
     children: [
-      Text("Programador: Gabriel Proaño"),
-      Text("Carrera:Desarrollo de Software")
+      Center(child: Text("Programador: Gabriel Proaño")),
+      Center(child: Text("Carrera:Desarrollo de Software"))
     ],
   ),
   
